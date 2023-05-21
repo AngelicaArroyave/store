@@ -58,11 +58,48 @@ p {
     color: var(--white);
 }
 
+.buy__blocks {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+}
+
+.buy__block {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .buy__block {
+        grid-row: 1 / 2;
+    }
+}
+
 .graphic--shirt,
 .graphic--node,
 .container {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.container__aboutUs {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.container__aboutUs--image {
+    width: 100%;
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+    .container__aboutUs {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .container__aboutUs--image {
+        grid-column: 2 / 3;
+    }
 }
 
 /* Resto de css */

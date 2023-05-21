@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,11 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header">
-        <a href="index.html"> <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
+        <a href="index.html">
+            <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
             <img class="header__logo" src="img/logo.png" alt="Logotipo">
         </a>
     </header>
@@ -23,15 +26,77 @@
         <a class="navigation__link" href="index.html"> Tienda </a>
         <a class="navigation__link navigation__link--active" href="nosotros.html"> Nosotros </a>
     </nav>
+    <h1> Sobre nosotros </h1>
     <main class="container">
-        <h1> Nosotros </h1>
 
-        <div>
-            
+        <div class="container__aboutUs">
+            <div class="container__aboutUs--information">
+                <p>
+                    Etiam pulvinar blandit velit, quis eleifend enim sodales et. Cras viverra scelerisque convallis. Aliquam
+                    vulputate elit odio, nec interdum massa pharetra sit amet. Phasellus ultricies eros arcu, ac tristique
+                    orci condimentum at. Integer sagittis, risus eu euismod accumsan, arcu lectus laoreet lorem, sit amet
+                    imperdiet diam mi nec nunc. Phasellus vulputate convallis dignissim. Sed et neque ut libero placerat
+                    dignissim vel eu urna. Ut eget venenatis tellus. Integer interdum, arcu ac ultricies sollicitudin,
+                    lectus ante cursus ante, sit amet accumsan nulla mi id urna. Aenean convallis, neque ut pellentesque
+                    congue, tortor nunc facilisis metus, ut maximus lectus nulla condimentum velit. Mauris vitae mollis
+                    metus. Nunc vel tempus justo. Morbi bibendum gravida blandit. Sed laoreet magna eget commodo tempus.
+                    Nunc dolor purus, sodales eu leo sed, varius pharetra erat.
+                </p>
+            </div>
+            <img class="container__aboutUs--image" src="img/nosotros.jpg" alt="Imagen sobre nosotros">
         </div>
+
     </main>
+
+    <section class="container buy">
+        <h2 class="buy__title"> Porqué comprar con nosostros </h2>
+    
+        <div class="buy__blocks">
+            <div class="buy__block">
+                <img src="img/icono_1.png" alt="Icono 1">
+                <h3> El mejor precio </h3>
+                <p>
+                    Nulla porta lacinia purus vel pulvinar. Cras enim urna, malesuada ullamcorper tincidunt sed,
+                    suscipit
+                    non nisl. Aliquam vitae odio ultricies, placerat neque vel, hendrerit orci. Suspendisse a velit eget
+                    nibh volutpat hendrerit.
+                </p>
+            </div>
+            <div class="buy__block">
+                <img src="img/icono_2.png" alt="Icono 2">
+                <h3> Para devs </h3>
+                <p>
+                    Nulla porta lacinia purus vel pulvinar. Cras enim urna, malesuada ullamcorper tincidunt sed,
+                    suscipit
+                    non nisl. Aliquam vitae odio ultricies, placerat neque vel, hendrerit orci. Suspendisse a velit eget
+                    nibh volutpat hendrerit.
+                </p>
+            </div>
+            <div class="buy__block">
+                <img src="img/icono_3.png" alt="Icono 3">
+                <h3> Envío gratis </h3>
+                <p>
+                    Nulla porta lacinia purus vel pulvinar. Cras enim urna, malesuada ullamcorper tincidunt sed,
+                    suscipit
+                    non nisl. Aliquam vitae odio ultricies, placerat neque vel, hendrerit orci. Suspendisse a velit eget
+                    nibh volutpat hendrerit.
+                </p>
+            </div>
+            <div class="buy__block">
+                <img src="img/icono_4.png" alt="Icono 4">
+                <h3> La mejor caldidad </h3>
+                <p>
+                    Nulla porta lacinia purus vel pulvinar. Cras enim urna, malesuada ullamcorper tincidunt sed,
+                    suscipit
+                    non nisl. Aliquam vitae odio ultricies, placerat neque vel, hendrerit orci. Suspendisse a velit eget
+                    nibh volutpat hendrerit.
+                </p>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <p class="footer__text"> FrontEnd Store - Todos los derechos Reservados 2023 </p>
     </footer>
 </body>
+
 </html>
