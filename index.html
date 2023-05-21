@@ -5,8 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FrontEnd Store </title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <a href="index.html"> <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+    <nav class="navigation">
+        <a class="navigation__link navigation__link--active" href="index.html"> Tienda </a>
+        <a class="navigation__link" href="aboutUs.html"> Nosotros </a>
+    </nav>
+    <main class="container">
+        <h1> Nuestros productos </h1>
+
+        <div class="grid">
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/1.jpg" alt="Camisa 1">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> VueJS </p>
+                        <p class="shirt__price"> $30 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/2.jpg" alt="Camisa 2">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> AngularJS </p>
+                        <p class="shirt__price"> $25 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/3.jpg" alt="Camisa 3">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> ReactJS </p>
+                        <p class="shirt__price"> $35 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/4.jpg" alt="Camisa 4">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> Redux </p>
+                        <p class="shirt__price"> $30 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/5.jpg" alt="Camisa 5">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> NodeJS </p>
+                        <p class="shirt__price"> $15 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/6.jpg" alt="Camisa 6">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> SASS </p>
+                        <p class="shirt__price"> $20 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/7.jpg" alt="Camisa 7">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> HTML5 </p>
+                        <p class="shirt__price"> $25 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/8.jpg" alt="Camisa 8">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> GitHub </p>
+                        <p class="shirt__price"> $35 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/9.jpg" alt="Camisa 9">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> BulmaCSS </p>
+                        <p class="shirt__price"> $28 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/10.jpg" alt="Camisa 10">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> TypeScript </p>
+                        <p class="shirt__price"> $10 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/11.jpg" alt="Camisa 11">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> Drupal </p>
+                        <p class="shirt__price"> $40 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/12.jpg" alt="Camisa 12">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> JavaScript </p>
+                        <p class="shirt__price"> $40 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/13.jpg" alt="Camisa 13">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> GrahpQL </p>
+                        <p class="shirt__price"> $30 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="shirt.html">
+                    <img class="shirt__image" src="img/14.jpg" alt="Camisa 14">
+                    <div class="shirt__information">
+                        <p class="shirt__name"> WordPress </p>
+                        <p class="shirt__price"> $40 </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="graphic graphic--shirt">
+                <img src="img/grafico1.jpg" alt="Gráfico 1">
+            </div>
+            <div class="graphic graphic--node">
+                <img src="img/grafico2.jpg" alt="Gráfico 2">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text"> FrontEnd Store - Todos los derechos Reservados 2023 </p>
+    </footer>
 </body>
 </html>

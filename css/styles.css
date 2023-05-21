@@ -1,0 +1,181 @@
+:root {
+    --primary: #9C27B0;
+    --primaryDark: #89119D;
+    /* --secundary: #FFCE00; */
+    --secundary: #00FDFF;
+    --secundaryDark: rgb(233,287,2);
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --mainSource: 'Bebas Neue', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundary);
+    font-family: var(--mainSource);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+.graphic--shirt,
+.graphic--node,
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Resto de css */
+.footer {
+    background-color: var(--primaryDark);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: var(--mainSource);
+    font-size: 2.5rem;
+}
+
+.graphic {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    /* background-size: cover; */ /* Sirve para que la imagen tome todo el tamaño del campo */
+    grid-column: 1 / 3;
+}
+
+.graphic--shirt {
+    grid-row: 2 / 3;
+}
+
+.graphic--node {
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+    .graphic--node {
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.header {
+    /* text-align: center; */ /* Forma 1 para centrar la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    /* padding: 5rem; */ /* Forma 1 de dar espacio de arriba hacia abajo */
+    margin: 5rem 0;
+}
+
+.navigation {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* Lo que hace es separar los elementos */
+}
+
+.navigation__link {
+    font-family: var(--mainSource);
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.navigation__link:last-of-type { /* permite seleccionar el último elemento */
+    margin-right: 0;
+}
+
+.navigation__link--active, /* Se escribe el css para cuando se está en una determinada página persista el colo de hover */
+.navigation__link:hover {
+    color: var(--secundary);
+}
+
+.graphic--shirt,
+.graphic--node,
+.product {
+    background-color: var(--primaryDark);
+    padding: 2rem;
+}
+
+.shirt__image {
+    width: 100%;
+}
+
+.shirt__information {
+    text-align: center;
+}
+
+.shirt__name {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.shirt__price {
+    color: var(--secundary);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.shirt__name,
+.shirt__price {
+    font-family: var(--mainSource);
+    margin: 1rem 0;
+    line-height: 1.2;
+}
