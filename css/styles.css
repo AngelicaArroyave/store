@@ -1,6 +1,7 @@
 :root {
     --primary: #9C27B0;
     --primaryDark: #89119D;
+    --primaryClear: #C251D5;
     /* --secundary: #FFCE00; */
     --secundary: #00FDFF;
     --secundaryDark: rgb(233,287,2);
@@ -8,6 +9,7 @@
     --black: #000000;
 
     --mainSource: 'Bebas Neue', sans-serif;
+    --secundarySource: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -31,7 +33,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 h1, h2, h3 {
@@ -54,7 +56,7 @@ h3 {
 
 p {
     font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--secundarySource);
     color: var(--white);
 }
 
@@ -87,7 +89,6 @@ p {
 }
 
 .container__aboutUs--image {
-    width: 100%;
     grid-row: 1 / 2;
 }
 
@@ -191,10 +192,6 @@ p {
     padding: 2rem;
 }
 
-.shirt__image {
-    width: 100%;
-}
-
 .shirt__information {
     text-align: center;
 }
@@ -215,4 +212,58 @@ p {
     font-family: var(--mainSource);
     margin: 1rem 0;
     line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .shirts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.form__select {
+    border-color: var(--primaryDark);
+    border-width: 1rem;
+    border-style: solid;
+    /* border: 1rem solid var(--primaryDark); */ /* Otra forma de definir lo anterior */
+    background-color: var(--primaryClear);
+    /* background-color: transparent; */ /* otra forma de colocar el color de fondo */
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--secundarySource);
+    /* padding: 1rem; */ /* Se puede poner un padding o un height */
+    height: 6rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form__submit {
+    background-color: var(--secundary);
+    grid-column: 1 / 2;
+    border: none;
+    font-size: 2rem;
+    font-family: var(--mainSource);
+    padding: 2rem;
+    transition: font-size .3s ease; /* Sirve para darle un tiempo a la transición de cambio de letra */
+}
+
+.form__submit:hover {
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(255 255 255 / 50%);
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    .form__submit {
+        /* margin-left: 5rem;
+        margin-right: 5rem; */
+        /* margin: 0;
+        grid-column: 1 / 3; */
+    }
 }

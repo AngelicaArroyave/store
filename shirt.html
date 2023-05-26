@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,11 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header">
-        <a href="index.html"> <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
+        <a href="index.html">
+            <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
             <img class="header__logo" src="img/logo.png" alt="Logotipo">
         </a>
     </header>
@@ -24,10 +27,38 @@
         <a class="navigation__link" href="aboutUs.html"> Nosotros </a>
     </nav>
     <main class="container">
-        <h1> Nuestros productos </h1>
+        <h1> Productos - Camisas </h1>
+        <h2> React JS </h2>
+
+        <div class="shirts">
+            <img class="shirts__image" src="img/3.jpg" alt="Imagen de camisa React JS">
+            
+            <div class="shirts__container">
+                <p>
+                    Aliquam tincidunt ligula id pretium malesuada. Donec venenatis risus ac enim mattis, ac malesuada leo
+                    posuere. Proin molestie neque ac orci consequat, vitae condimentum purus tincidunt. Ut et suscipit eros,
+                    in accumsan quam. Ut orci velit, dictum sed mauris at, tincidunt euismod sem. Interdum et malesuada
+                    fames ac ante ipsum primis in faucibus. Nam pulvinar vehicula commodo. Suspendisse in neque lectus.
+                    Mauris vel placerat felis, tempus posuere ante.
+                </p>
+
+                <form class="form">
+                    <select class="form__select">
+                        <option selected disabled> Selecciona talla </option> <!-- Tiene seleccionado por default y a la vez no está habilitada como una opción -->
+                        <option value="1"> Pequeña </option>
+                        <option value="2"> Mediana </option>
+                        <option value="3"> Grande </option>
+                    </select>
+
+                    <input class="form__select" type="number" placeholder="Cantidad" min="1"> <!-- Con step se le pueden dar cierta cantidad de saltos -->
+                    <input class="form__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <p class="footer__text"> FrontEnd Store - Todos los derechos Reservados 2023 </p>
     </footer>
 </body>
+
 </html>
