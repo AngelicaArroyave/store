@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FrontEnd Store </title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <!-- Se coloca como un link para que al presionar la imagen rediccione a la página principal -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+    <nav class="navigation">
+        <a class="navigation__link" href="index.html"> Tienda </a>
+        <a class="navigation__link" href="aboutUs.html"> Nosotros </a>
+        <a class="navigation__link" href="product.html"> Camisas </a>
+        <a class="navigation__link  navigation__link--active" href="otherProduct.html"> Hoddies y Pantalones </a>
+    </nav>
+    <main class="container">
+        <h1> Productos - Hoddies y Pantalones </h1>
+        <h2> JavaScript </h2>
+
+        <div class="shirts">
+            <div class="shirts__icon">
+                <svg class="shirts__icon--icon" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-javascript" width="40" height="40" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path
+                        d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+            </div>
+
+            <div class="shirts__container">
+                <p>
+                    Aliquam tincidunt ligula id pretium malesuada. Donec venenatis risus ac enim mattis, ac malesuada
+                    leo
+                    posuere. Proin molestie neque ac orci consequat, vitae condimentum purus tincidunt. Ut et suscipit
+                    eros,
+                    in accumsan quam. Ut orci velit, dictum sed mauris at, tincidunt euismod sem. Interdum et malesuada
+                    fames ac ante ipsum primis in faucibus. Nam pulvinar vehicula commodo. Suspendisse in neque lectus.
+                    Mauris vel placerat felis, tempus posuere ante.
+                </p>
+
+                <form class="form">
+                    <select class="form__select">
+                        <option selected disabled> Selecciona talla </option>
+                        <!-- Tiene seleccionado por default y a la vez no está habilitada como una opción -->
+                        <option value="1"> Pequeña </option>
+                        <option value="2"> Mediana </option>
+                        <option value="3"> Grande </option>
+                    </select>
+                    
+                    <input class="form__select" type="number" placeholder="Cantidad" min="1">
+                    <!-- Con step se le pueden dar cierta cantidad de saltos -->
+                    <select class="form__select">
+                        <option selected disabled> Selecciona prenda </option>
+                        <!-- Tiene seleccionado por default y a la vez no está habilitada como una opción -->
+                        <option value="1"> Hoddie </option>
+                        <option value="2"> Pantalón </option>
+                    </select>
+                    <input class="form__submit--hoddiePant" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text"> FrontEnd Store - Todos los derechos Reservados 2023 </p>
+    </footer>
+</body>
+
+</html>
