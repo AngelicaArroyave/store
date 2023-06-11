@@ -60,6 +60,42 @@ p {
     color: var(--white);
 }
 
+.acordeon {
+    display: flex;
+    justify-content: center;
+}
+
+.acordeon__images {
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+
+.acordeon__images img,
+.acordeon__svg svg {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.acordeon__images img:hover,
+.acordeon__svg svg:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.acordeon__svg {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+}
+
 .buy__blocks {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -74,6 +110,11 @@ p {
     .buy__block {
         grid-row: 1 / 2;
     }
+}
+
+.container__shirt--section {
+    display: flex;
+    justify-content: center;
 }
 
 .graphic--shirt,
